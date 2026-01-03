@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Joke Generator</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #37944b;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Setup:</h2>
+            <h3 id="setup">Loading...</h3>
+        </div>
+        <div>
+            <h1>Punchline:</h1>
+            <h2 id="punchline">Please click the button for a joke.</h2>
+        </div>
+        <div>
+            <button id="newJokeButton">Get New Joke</button>
+        </div>
+
+        <script src="randomJoke.js"></script>
+    </body>
+</html>
